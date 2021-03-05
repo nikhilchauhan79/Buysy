@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityGroceryDetail">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/image_view_gro_detail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_price_detail"
+        android:text="1 Kg, Price"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_gro_detail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$4.99"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_heart"
+        android:id="@+id/text_view_rupees"/>
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/number_picker"
+        app:np_orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/text_view_price_detail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view_heart"
+        app:layout_constraintTop_toBottomOf="@id/text_view_price_detail"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/heart"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/text_view_price_detail"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:id="@+id/details"
+        app:layout_constraintVertical_bias="0.5"
+        android:text="Product details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number_picker"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nutrients"
+        android:id="@+id/nutrients"
+        app:layout_constraintBottom_toTopOf="@id/reviews"
+        app:layout_constraintTop_toBottomOf="@id/details"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:id="@+id/reviews"
+        app:layout_constraintBottom_toTopOf="@id/add_to_cart"
+        app:layout_constraintTop_toBottomOf="@id/nutrients"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_to_cart"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/plus_button"
+        android:icon="@drawable/jamshoppingart2x"
+        android:title="Plus Button"
+        app:showAsAction="ifRoom"></item>
+
+</menu>

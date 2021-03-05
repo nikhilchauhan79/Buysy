@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/item_greet"
+            android:title="Hello"
+            />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_home"
+            android:title="Home"
+            android:icon="@drawable/ic_baseline_home_24"
+            />
+
+        <item
+            android:id="@+id/item_category"
+            android:title="Shop By Category"
+            android:icon="@drawable/bxbxscategory"
+            />
+
+        <item
+            android:id="@+id/item_your_account"
+            android:title="Your Account"
+            android:icon="@drawable/user_profile"/>
+        <item
+            android:id="@+id/item_change_account"
+            android:title="Change Account"
+            android:icon="@drawable/user_change"/>
+
+        <item
+            android:id="@+id/item_your_cart"
+            android:title="Your Cart"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"/>
+
+        <item
+            android:id="@+id/item_your_orders"
+            android:title="Your Orders"
+            android:icon="@drawable/category"/>
+
+        <item
+            android:id="@+id/item_your_wishlist"
+            android:title="Your Wishlist"
+            android:icon="@drawable/bookmark_1"/>
+
+        <item
+            android:id="@+id/item_log_out"
+            android:title="Logout"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"/>
+    </group>
+</menu>

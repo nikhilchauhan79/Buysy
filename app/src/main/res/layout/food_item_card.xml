@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_view_item"
+            android:layout_width="180dp"
+            android:layout_height="190dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_price"
+            android:text="1 Kg, Price"
+            android:layout_below="@id/image_view_item"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$4.99"
+            android:layout_below="@id/text_view_price"
+            android:id="@+id/text_view_rupees"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heart"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/heart_food_item"
+            android:layout_toRightOf="@id/text_view_price"
+            android:layout_below="@id/image_view_item"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
